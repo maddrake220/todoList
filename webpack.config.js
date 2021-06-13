@@ -11,7 +11,7 @@ module.exports = {
   ],
   output: {
     filename: "bundle.js",
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "build"),
     clean: true,
   },
   module: {
@@ -20,7 +20,7 @@ module.exports = {
         test: /\.(png|jpe?g|gif)$/i,
         loader: "file-loader",
         options: {
-          name: "assets/[contenthash].[ext]",
+          outputPath: "assets",
         },
       },
       {
