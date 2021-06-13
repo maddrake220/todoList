@@ -1,9 +1,35 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>ToDoList App</title>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <style type="text/css">
+      @import url("src/index.css");
+    </style>
   </head>
+
   <body>
-    <h1>HEY</h1>
-    <script src="./index.js"></script>
+    <script src="src/bg.js"></script>
+    <script src="src/weather.js"></script>
+    <script src="src/index.js"></script>
+    <script src="src/todayclock.js"></script>
+    <script src="src/todo.js"></script>
+    <h5 class="js-clock"></h5>
+    <div id="weather"><span></span><span></span></div>
+    <h1>ToDo List</h1>
+    <h4 class="js-todayclock"></h4>
+
+    <form class="js-form form">
+      <input type="text" placeholder="What is your name?" />
+    </form>
+    <h4 class="js-greetings greetings"></h4>
+    <form class="js-toDoForm">
+      <input type="text" placeholder="Write To Do" />
+    </form>
+    <h2>Pending</h2>
+    <ul class="js-toDoList"></ul>
+    <br />
+    <h2>Finished</h2>
+    <ul class="js-finishList"></ul>
   </body>
 </html>
